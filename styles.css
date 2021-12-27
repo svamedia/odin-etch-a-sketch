@@ -1,0 +1,9 @@
+.grid-container {
+  height: 100vh;
+}
+
+.grid-cell {
+  border: 2px solid black;
+  height: 16px;
+  width: 16px;
+}
