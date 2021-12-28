@@ -1,9 +1,16 @@
 // cache the DOM
 // Grabs html div element and assigns it to variable
-var gridContainer_div = document.querySelector(".grid-container");
+let gridContainer_div = document.querySelector(".grid-container");
+
 // creation of new div
-var gridCell = document.createElement("div");
-// appends gridCell to html div element
-gridContainer_div.appendChild(gridCell);
-// adds .grid-cell class to newly created div
-gridCell.classList.add("grid-cell");
+let grid_table = document.createElement("table");
+// appends grid_table to html div element
+gridContainer_div.appendChild(grid_table);
+grid_table.id = "grid-table";
+
+// create table row element
+let myRow = document.createElement("tr");
+grid_table.appendChild(myRow);
+
+let rowCell = document.createElement("td");
+myRow.appendChild(rowCell);

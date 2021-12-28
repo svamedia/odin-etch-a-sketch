@@ -1,9 +1,14 @@
-.grid-container {
-  height: 100vh;
+body {
+  display: flex;
 }
 
-.grid-cell {
-  border: 2px solid black;
-  height: 16px;
-  width: 16px;
+.grid-container {
+  height: 100vh;
+  margin: auto;
+}
+
+#grid-table {
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
 }
