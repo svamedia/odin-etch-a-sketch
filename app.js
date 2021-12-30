@@ -12,17 +12,19 @@ function createGrid() {
   gridContainer_div.appendChild(grid_table);
   grid_table.id = "grid-table";
 
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 17; i++) {
     // create table row element
     let myRow = document.createElement("tr");
     myRow.id = "row" + i;
 
     grid_table.appendChild(myRow);
 
-    for (let j = 0; j < 11; j++) {
+    for (let j = 0; j < 17; j++) {
       let rowCell = document.createElement("td");
       myRow.appendChild(rowCell);
       rowCell.classList.add("table-cell");
     }
   }
 }
+
+window.addEventListener("load", createGrid());
