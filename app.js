@@ -3,6 +3,19 @@
 let gridContainer_div = document.querySelector(".grid-container");
 // function that contains for loop to create table rows to specific value
 
+// function that creates the main ui of the page
+function loadUi() {
+  //creates h1 into dom and appends to div
+  let mainHeader_h1 = document.createElement("h1");
+  mainHeader_h1.textContent = "Etch-A-Sketch";
+  gridContainer_div.appendChild(mainHeader_h1);
+
+  //create reset button
+  let gridErase_btn = document.createElement("button");
+  gridErase_btn.textContent = "Erase Grid";
+  gridContainer_div.appendChild(gridErase_btn);
+}
+
 function createGrid() {
   // creation of new div
   let grid_table = document.createElement("table");
@@ -30,6 +43,6 @@ function createGrid() {
   }
 }
 
+window.addEventListener("load", loadUi());
 //event listener changes the background color when mouse is hovered over
-
 window.addEventListener("load", createGrid());
