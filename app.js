@@ -14,6 +14,9 @@ function loadUi() {
   let gridErase_btn = document.createElement("button");
   gridErase_btn.textContent = "Erase Grid";
   gridContainer_div.appendChild(gridErase_btn);
+  gridErase_btn.addEventListener("click", function refresh() {
+    location.reload();
+  });
 }
 
 function createGrid() {
