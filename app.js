@@ -10,10 +10,21 @@ function loadUi() {
   mainHeader_h1.textContent = "Etch-A-Sketch";
   gridContainer_div.appendChild(mainHeader_h1);
 
+  //creates div for etch a sketch controls
+  let gridControl_div = document.createElement("div");
+  gridControl_div.classList.add("grid-control");
+  gridContainer_div.appendChild(gridControl_div);
+
+  //color picker html element
+  let colorPicker_input = document.createElement("input");
+  colorPicker_input.setAttribute("type", "color");
+  colorPicker_input.id = "color";
+  gridControl_div.appendChild(colorPicker_input);
+
   //create reset button
   let gridErase_btn = document.createElement("button");
   gridErase_btn.textContent = "Erase Grid";
-  gridContainer_div.appendChild(gridErase_btn);
+  gridControl_div.appendChild(gridErase_btn);
   gridErase_btn.addEventListener("click", function refresh() {
     location.reload();
   });
