@@ -17,3 +17,12 @@ body {
 .table-cell {
   border: 1px solid #686868;
 }
+
+#size-picker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-contain {
+  display: flex;
+}

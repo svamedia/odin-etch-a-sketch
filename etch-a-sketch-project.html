@@ -8,7 +8,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grid-container"></div>
+    <div class="grid-container">
+      <h1>Etch-A-Sketch</h1>
+      <div class="grid-control">
+        <form id="size-picker" onsubmit="createGrid()">
+          <div class="size-contain">
+            <p>Grid height:</p>
+            <input
+              type="number"
+              id="inputHeight"
+              name="height"
+              min="1"
+              max="100"
+              value="1"
+            />
+            <p>Grid width:</p>
+            <input
+              type="number"
+              id="inputWidth"
+              name="width"
+              min="1"
+              max="100"
+              value="1"
+            />
+            <input type="submit" value="submit" />
+          </div>
+          <div class="color-contain">
+            <input type="color" name="colorPicker" id="color" />
+            <button onclick="window.location.reload()">Erase Grid</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
