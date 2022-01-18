@@ -10,17 +10,12 @@ body {
 #grid-table {
   border: 1px solid black;
   border-spacing: 0.5px;
-  height: 540px;
-  width: 640px;
+  /* height: 540px;
+  width: 640px; */
 }
 
 .table-cell {
   border: 1px solid #686868;
-}
-
-#size-picker {
-  display: flex;
-  justify-content: space-between;
 }
 
 .size-contain {
