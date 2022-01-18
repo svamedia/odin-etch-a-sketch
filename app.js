@@ -8,9 +8,12 @@ function createGrid() {
   let grid_table = document.createElement("table");
   let heights = document.getElementById("inputHeight").value;
   let widths = document.getElementById("inputWidth").value;
+  let canvas = document.getElementById("pixel-canvas");
+
+  if (canvas.firstChild) canvas.removeChild(canvas.firstChild);
 
   // appends grid_table to html div element
-  gridContainer_div.appendChild(grid_table);
+  canvas.appendChild(grid_table);
   grid_table.id = "grid-table";
 
   for (let i = 0; i < heights; i++) {
@@ -25,8 +28,8 @@ function createGrid() {
       myRow.appendChild(rowCell);
       rowCell.classList.add("table-cell");
       // nested function that adds the css styles via dom manipulation and css
-      rowCell.onmouseover = function changeCellColor() {
-        rowCell.style.backgroundColor = "red";
+      rowCell.onmouseover = function () {
+        this.style.backgroundColor = document.getElementById("color").value;
       };
     }
   }
