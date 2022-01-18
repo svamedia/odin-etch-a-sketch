@@ -10,12 +10,13 @@ body {
 #grid-table {
   border: 1px solid black;
   border-spacing: 0.5px;
-  /* height: 540px;
-  width: 640px; */
+  max-height: 960px;
+  max-width: 960px;
 }
 
 .table-cell {
   border: 1px solid #686868;
+  padding: 25px;
 }
 
 .size-contain {
