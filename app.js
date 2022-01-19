@@ -17,6 +17,7 @@ function createGrid() {
   grid_table.id = "grid-table";
 
   for (let i = 0; i < heights; i++) {
+    if (i > 100) break;
     // create table row element
     let myRow = document.createElement("tr");
     myRow.id = "row" + i;
@@ -24,6 +25,7 @@ function createGrid() {
     grid_table.appendChild(myRow);
 
     for (let j = 0; j < widths; j++) {
+      if (j > 100) break;
       let rowCell = document.createElement("td");
       myRow.appendChild(rowCell);
       rowCell.classList.add("table-cell");

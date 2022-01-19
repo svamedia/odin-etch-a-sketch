@@ -23,14 +23,21 @@ h1 {
   text-align: center;
 }
 
+#pixel-canvas {
+  margin-top: 25px;
+}
+
 #grid-table {
   border: 1px solid black;
   border-spacing: 0.5px;
-  max-height: 960px;
-  max-width: 960px;
+  height: 650px;
+  width: 650px;
 }
 
 .table-cell {
   border: 1px solid #686868;
-  padding: 13px;
+}
+
+input:invalid {
+  background-color: red;
 }
