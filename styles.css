@@ -3,8 +3,24 @@ body {
 }
 
 .grid-container {
-  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
   margin: auto;
+}
+
+.grid-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-contain {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
 }
 
 #grid-table {
@@ -17,8 +33,4 @@ body {
 .table-cell {
   border: 1px solid #686868;
   padding: 13px;
-}
-
-.size-contain {
-  display: flex;
 }
