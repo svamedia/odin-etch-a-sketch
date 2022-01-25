@@ -6,7 +6,9 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+  padding-top: 5vh;
   margin: auto;
+  width: 550px;
 }
 
 .grid-control {

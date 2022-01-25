@@ -12,7 +12,7 @@
       <h1>Etch-A-Sketch</h1>
       <div class="grid-control">
         <div class="size-contain">
-          <p>Grid height:</p>
+          <!-- <p>Grid height:</p>
           <input
             type="number"
             id="inputHeight"
@@ -31,7 +31,25 @@
             max="100"
             value="16"
             required
-          />
+          /> -->
+          <label for="height">Choose a height:</label>
+          <select name="height" id="inputHeight">
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="24">24</option>
+            <option value="56">56</option>
+            <option value="72">72</option>
+            <option value="100">100</option>
+          </select>
+          <label for="height">Choose a width:</label>
+          <select name="width" id="inputWidth">
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="24">24</option>
+            <option value="56">56</option>
+            <option value="72">72</option>
+            <option value="100">100</option>
+          </select>
           <button type="button" onclick="createGrid()">Create</button>
         </div>
         <div class="color-contain">
